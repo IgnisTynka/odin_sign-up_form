@@ -7,6 +7,8 @@ body{
     
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
 }
@@ -45,6 +47,7 @@ img{
 .form_container{
     flex-grow: 2;
     width: 65vw;
+    padding: 10% 0 10% 0;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -61,7 +64,7 @@ form{
 }
 
 h2{
-    margin: 25px;
+    margin: 25px 50px;
 }
 
 fieldset{
@@ -71,15 +74,13 @@ fieldset{
 
 .field_container{
     padding-top: 10px;
-    padding: 25px;
-    /* display: grid;
-    grid-template-columns: 50% 50%; */
-    display: flex;
-    flex-wrap: wrap
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 label{
-    margin: 0px 50px 25px 0px;
+    margin: 0 25px 25px 0;
     display: flex;
     flex-direction: column;
     font-size: 12px;
@@ -95,10 +96,10 @@ input{
 .create{
     background-color:#87779b;
     color: white;
-    font-size:14px;
+    font-size: 16px;
     font-weight: bold;
-    height: 40px;
-    width: 150px;
+    height: 50px;
+    width: 175px;
     border-radius: 10px;
     border: none;
     margin: 25px 50px;
@@ -107,4 +108,5 @@ input{
 .log_in{
     flex-grow: 1;
     display: flex;
+    margin-left: 50px;
 }
