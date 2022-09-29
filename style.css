@@ -1,10 +1,15 @@
+@font-face{
+    font-family: customFont;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,12 +23,20 @@ body{
     width: 35vw;
     min-width: 345px;
     height: 100vh;
-    position: relative;
+    /* position: relative; */
     background: url(images/background_image.jpg);
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.credits{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    color: white;
 }
 
 .logo_background{
@@ -36,8 +49,11 @@ body{
     height: 10rem;
 }
 .logo_background > p{
+    margin-left: 15px;
     color: white;
-    font-size: 64px;
+    font-size: 85px;
+    font-family: customFont;
+    letter-spacing: 4px;
 }
 
 img{
@@ -47,7 +63,6 @@ img{
 .form_container{
     flex-grow: 2;
     width: 65vw;
-    padding: 10% 0 10% 0;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -70,6 +85,11 @@ h2{
 fieldset{
     background-color: white;
     border: none;
+    box-shadow: 2px 7px 5px lightgrey;
+}
+
+fieldset h2{
+    margin-bottom: 0;
 }
 
 .field_container{
