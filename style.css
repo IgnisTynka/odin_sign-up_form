@@ -3,6 +3,11 @@
     src: url(./fonts/Norse-Bold.otf);
 }
 
+@font-face{
+    font-family: customFontTwo;
+    src: url(./fonts/Adelle_light.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +15,7 @@
 
 body{
     background-color: whitesmoke;
+    font-family: customFontTwo;
     display: flex;
     flex-direction: row;
     justify-content: center;
