@@ -119,6 +119,10 @@ input{
     border-radius: 5px;
 }
 
+input:focus{
+    box-shadow: 2px 1px 5px #7c95f9;
+}
+
 .create{
     background-color:#87779b;
     color: white;
